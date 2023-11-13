@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="MrNeutron199" />
+		<meta name="description" content="A Chatbot page" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Chatbot</title>
+	</head>
+	<body>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js"></script>
+		<script src="script.js"></script>
+		<div class="container">
+			<div class="chat-header">
+				<div class="logo">
+					<img
+						src="https://github.com/codewelltech/chatbot-css-js-1/blob/main/images/chatbot.png?raw=true"
+						alt="logo"
+					/>
+				</div>
+				<div class="title">Let's Chat</div>
+			</div>
+			<div class="chat-body" id="chatBody"></div>
+			<div>
+				<div
+					onkeypress="if (event.keyCode == 13) { document.getElementById('sendBtn').click()}"
+					class="input-sec"
+				>
+					<input
+						class="inputArea"
+						type="text"
+						id="txtInput"
+						placeholder="Tap 'Enter' to send a message to the Chatbot!"
+						autofocus
+					/>
+					<img
+						src="https://raw.githubusercontent.com/codewelltech/chatbot-css-js-1/a77fbabe9f84f554ecda9475b0b3890ed4eb599c/images/send.svg"
+						alt="Button"
+						onclick="generateReply(); document.getElementById('txtInput').value = '';"
+						class="sendBtn"
+						id="sendBtn"
+					/>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const time = new Date().toLocaleString('en-US', {
+				hour: 'numeric',
+				minute: 'numeric',
+				hour12: true,
+				timeZone: 'Asia/Kolkata',
+			});
+			const timeDiv = document.createElement('div');
+			timeDiv.innerHTML = `<div class="removed" id="time">${time}</div>`;
+			document
+				.getElementById('chatBody')
+				.insertAdjacentElement('afterbegin', timeDiv);
+			setTimeout(() => {
+				const newTime = new Date().toLocaleString('en-US', {
+					hour: 'numeric',
+					minute: 'numeric',
+					hour12: true,
+					timeZone: 'Asia/Kolkata',
+				});
+				document.getElementById('time').innerText = newTime;
+			}, 30000);
+		</script>
+	</body>
+</html>
