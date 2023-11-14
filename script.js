@@ -1,7 +1,8 @@
 function generateReply() {
 	try {
 const message = (document.getElementById('message').value).trim()
-		if (!message.toString()) return;		timeDiv.classList.remove('removed');
+		if (!message.toString()) return;	
+	timeDiv.classList.remove('removed');
 		timeDiv.classList.add('time');
 		const chatBody = document.getElementById('chatBody');
 		const msg = message.replaceAll('Mylo', '').toLowerCase();
