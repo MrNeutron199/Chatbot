@@ -30,8 +30,8 @@ function generateReply() {
 			}, 2000);
 			chatBody.scrollTop = chatBody.scrollHeight;
 		}
-		if (message.includes('your') || message.includes('ur')) {
-			if (message.includes('name')) {
+		if (msg.includes('your') || msg.includes('ur')) {
+			if (msg.includes('name')) {
 				const arr = [
 					'My name is Mylo',
 					'You can call me Mylo!',
