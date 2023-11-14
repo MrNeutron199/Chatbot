@@ -11,7 +11,7 @@ function generateReply() {
 
 		const replyDiv = document.createElement('div');
 		replyDiv.classList.add('chatbot-message');
-		replyDiv.innerText = 'Loading Reply...';
+		replyDiv.innerText = '....';
 		chatBody.append(replyDiv);
 		const key = 'AIzaSyCMVLJ_4GQlJZTp2B6nFmbOSsr4DUin-98';
 		const link = `https://generativelanguage.googleapis.com/v1beta2/models/chat-bison-001:generateMessage?key=${key}`;
