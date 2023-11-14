@@ -32,18 +32,7 @@ function generateReply() {
 		}
 		if (msg.includes('your') || msg.includes('ur')) {
 			if (msg.includes('name')) {
-				const arr = [
-					'My name is Mylo.',
-					'You can call me Mylo!',
-					'I go by Mylo.',
-					"I'm Mylo, Nice to meet you!",
-				];
-				const m = Math.floor(Math.random() * (4 + 1));
-				if (m) {
-					reply(arr[m]);
-				} else {
-					reply('My name is Mylo!');
-				}
+				reply('My name is Mylo. Nice to meet you!');
 				return;
 			}
 
