@@ -66,6 +66,7 @@ body {
 	border-radius: 10px;
 }
 .user-message {
+	max-width: 370px;
 	border-radius: 10px 3px 10px 10px;
 	padding: 8px;
 	background: #ccc;
@@ -73,6 +74,7 @@ body {
 	margin: 5px;
 }
 .chatbot-message {
+	max-width: 370px;
 	border-radius: 3px 10px 10px 10px;
 	padding: 8px;
 	background: #074eb3;
