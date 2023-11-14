@@ -65,6 +65,9 @@ body {
 	align-self: flex-end;
 	border-radius: 10px;
 }
+.chatInput img:hover {
+	background-color: rgb(214, 214, 236);
+}
 .user-message {
 	max-width: 370px;
 	border-radius: 10px 3px 10px 10px;
