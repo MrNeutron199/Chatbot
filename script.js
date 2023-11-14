@@ -4,9 +4,9 @@ function generateReply() {
 		timeDiv.classList.add('time');
 		const chatBody = document.getElementById('chatBody');
 		const message = (document.getElementById('message').value).trim()
-		if (!message) return;
-		const msg = message.replaceAll('Mylo', '').trim().toLowerCase();
-		if (!msg) return
+		if (!message.toString()) return;
+		const msg = message.replaceAll('Mylo', '').toLowerCase();
+		if (!msg.toString()) return
 		const messageDiv = document.createElement('div');
 		messageDiv.classList.add('user-message');
 		messageDiv.append(message);
