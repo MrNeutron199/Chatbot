@@ -3,7 +3,7 @@ function generateReply() {
 		timeDiv.classList.remove('removed');
 		timeDiv.classList.add('time');
 		const chatBody = document.getElementById('chatBody');
-		const message = document.getElementById('message').value;
+		const message = (document.getElementById('message').value).trim()
 		if (!message) return;
 		const msg = message.replaceAll('Mylo', '').trim().toLowerCase();
 		if (!msg) return
