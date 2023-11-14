@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Poppins:wght@200;300&display=swap');
+* {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	background: blueviolet;
+	display: flex;
+	justify-content: center;
+}
+.container {
+	background: #fff;
+	box-shadow: 0px 0px 15px 0px black;
+	display: flex;
+	margin-top: 3%;
+	flex-direction: column;
+	border-radius: 10px;
+	flex-wrap: wrap;
+	flex-basis: 800px;
+}
+.chatHeader {
+	background-color: blue;
+	display: flex;
+	align-items: center;
+	padding: 0px 15px;
+	flex-direction: row;
+	height: 60px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+.chatHeader img {
+	box-shadow: 0px 0px 10px 0px black;
+	height: 70%;
+	border-radius: 10px;
+}
+.title {
+	display: flex;
+	padding-left: 2%;
+	color: #fff;
+}
+.chatBody {
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+}
+.chatInput {
+	height: 50px;
+	display: flex;
+	text-align: center;
+	border-top: 1px solid #ccc;
+	padding-left: 1%;
+}
+.chatInput input {
+	border: none;
+	outline: none;
+	flex-basis: 97%;
+	border-bottom-left-radius: 10px;
+	border-right: 1px solid #ccc;
+}
+.chatInput img {
+	margin: auto;
+	border: #fff;
+	border-left: black;
+	align-self: flex-end;
+	border-radius: 10px;
+}
+.user-message {
+	max-height: 390px;
+	max-width: 370px;
+	border-radius: 10px 3px 10px 10px;
+	padding: 8px;
+	background: #ccc;
+	align-self: flex-end;
+	margin: 5px;
+}
+.chatbot-message {
+	max-height: 390px;
+	max-width: 370px;
+	border-radius: 3px 10px 10px 10px;
+	padding: 8px;
+	background: #074eb3;
+	color: #fff;
+	align-self: flex-start;
+	margin: 5px;
+}
+.time {
+	align-self: center;
+}
+.removed {
+	align-self: center;
+	opacity: 0;
+}
