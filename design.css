@@ -79,7 +79,6 @@ body {
 }
 .chatbot-message {
 	max-width: 470px;
-	overflow-wrap: break-word;
 	border-radius: 3px 10px 10px 10px;
 	padding: 8px;
 	background: #074eb3;
