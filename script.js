@@ -8,8 +8,8 @@ const message = (document.getElementById('message').value).trim()
 		const msg = message.replaceAll('Mylo', '').toLowerCase();
 		if (!msg.toString()) return;
 		const messageDiv = document.createElement('div');
+		messageDiv.innerText = message;
 		messageDiv.classList.add('user-message');
-		messageDiv.append(message);
 		chatBody.append(messageDiv);
 		const replyDiv = document.createElement('div');
 		replyDiv.classList.add('chatbot-message');

@@ -4,9 +4,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 body {
-	background: blueviolet;
+	background: rgb(5, 9 ,58);
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 .container {
 	background: #fff;
@@ -16,7 +17,7 @@ body {
 	flex-direction: column;
 	border-radius: 10px;
 	flex-wrap: wrap;
-	flex-basis: 800px;
+	flex-basis: 1200px;
 }
 .chatHeader {
 	background-color: blue;
@@ -39,7 +40,7 @@ body {
 	color: #fff;
 }
 .chatBody {
-	height: 400px;
+	height: 700px;
 	display: flex;
 	flex-direction: column;
 	overflow-y: auto;
@@ -70,6 +71,8 @@ body {
 }
 .user-message {
 	max-width: 370px;
+	height: inherit ;
+	width: inherit;
 	border-radius: 10px 3px 10px 10px;
 	padding: 8px;
 	background: #ccc;
@@ -77,7 +80,7 @@ body {
 	margin: 5px;
 }
 .chatbot-message {
-	max-width: 370px;
+	max-width: 170px;
 	border-radius: 3px 10px 10px 10px;
 	padding: 8px;
 	background: #074eb3;
